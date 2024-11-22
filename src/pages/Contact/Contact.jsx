@@ -55,7 +55,7 @@ const Contact = () => {
       data-aos-easing="linear"
       data-aos-duration="2000"
       id="contact"
-      className=" section  lg:mx-28  mt-28 pb-28"
+      className=" section  lg:mx-20  mt-36 pb-28"
     >
       <p className="text-center text-lg lg:text-xl font-bold text-[#b6b4b4] uppercase">
         Contact
