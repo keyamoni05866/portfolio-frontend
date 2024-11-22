@@ -44,34 +44,30 @@ const ProjectCard = ({ project }) => {
           </p>
 
           <div className="flex  gap-2 mt-3">
-            {technologies
-              ?.slice(0, 3)
-              .map((feature: string, index: React.Key | null | undefined) => (
-                <div
-                  key={index}
-                  className="text-gray-700 bg-base-300 lg:px-5 px-2  py-1 rounded-2xl text-[10px] lg:text-[16px] "
-                >
-                  {feature}
-                </div>
-              ))}
+            {technologies?.slice(0, 3).map((feature, index) => (
+              <div
+                key={index}
+                className="text-gray-700 bg-base-300 lg:px-5 px-2  py-1 rounded-2xl text-[10px] lg:text-[16px] "
+              >
+                {feature}
+              </div>
+            ))}
           </div>
 
           <div className="flex  gap-2 mt-3">
-            {technologies
-              ?.slice(3, 6)
-              .map((feature: string, index: React.Key | null | undefined) => (
-                <div
-                  key={index}
-                  className="text-gray-700 bg-base-300 lg:px-5 px-2  py-1 rounded-2xl text-[10px] lg:text-[16px]"
-                >
-                  {feature}
-                </div>
-              ))}
+            {technologies?.slice(3, 6).map((feature, index) => (
+              <div
+                key={index}
+                className="text-gray-700 bg-base-300 lg:px-5 px-2  py-1 rounded-2xl text-[10px] lg:text-[16px]"
+              >
+                {feature}
+              </div>
+            ))}
           </div>
           <div className="flex  gap-2 mt-3">
             {technologies
               ?.slice(6, technologies.length)
-              .map((feature: string, index: React.Key | null | undefined) => (
+              .map((feature, index) => (
                 <div
                   key={index}
                   className="text-gray-700 bg-base-300 lg:px-5 px-2  py-1 rounded-2xl text-[10px] lg:text-[16px]"
@@ -106,9 +102,12 @@ const ProjectCard = ({ project }) => {
           </div>
 
           <div className="flex justify-start pt-2">
-            <button className=" custom-outline-btn  flex justify-center items-center gap-2">
+            <Link
+              to={`/projectDetails/${_id}`}
+              className=" custom-outline-btn  flex justify-center items-center gap-2"
+            >
               View Details <FaArrowRight />
-            </button>
+            </Link>
           </div>
         </div>
       </div>

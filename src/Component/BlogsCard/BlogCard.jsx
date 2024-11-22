@@ -17,7 +17,7 @@ const BlogCard = ({ blog }) => {
           </div>
 
           <div className="lg:text-lg text-sm font-light mt-4 text-justify pe-4 ">
-            <Link href={`/${_id}`}>
+            <Link to={`/blogDetails/${_id}`}>
               <QuilToNormalHTML description={description} maxLength={220} />
             </Link>
           </div>
@@ -33,7 +33,9 @@ const BlogCard = ({ blog }) => {
             })}
           </h4>
           <div className="flex justify-end">
-            <button className="custom-outline-btn ">View Details</button>
+            <Link to={`/blogDetails/${_id}`} className="custom-outline-btn ">
+              View Details
+            </Link>
           </div>
         </div>
       </div>
