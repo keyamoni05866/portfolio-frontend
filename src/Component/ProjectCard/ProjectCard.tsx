@@ -84,7 +84,7 @@ const ProjectCard = ({ project }) => {
             <a
               href={liveLink}
               target="_blank"
-              className=" text-gray-700 px-5  py-1 rounded-2xl flex items-center hover:underline hover:text-blue-500 text-[12px] "
+              className=" text-gray-700 px-5  py-1 rounded-2xl flex items-center hover:underline hover:text-blue-500 lg:text-[16px] text-[12px] "
             >
               <FaExternalLinkAlt className="text-md me-1"></FaExternalLinkAlt>
               Live
@@ -92,14 +92,14 @@ const ProjectCard = ({ project }) => {
             <a
               href={clientRepo}
               target="_blank"
-              className=" text-gray-700 px-5  py-1 rounded-2xl flex items-center hover:underline hover:text-blue-500   text-[12px]"
+              className=" text-gray-700 px-5  py-1 rounded-2xl flex items-center hover:underline hover:text-blue-500 lg:text-[16px]  text-[12px]"
             >
               <FaGithub className="text-md me-1"></FaGithub>Client-Code
             </a>
             <a
               href={serverRepo}
               target="_blank"
-              className=" text-gray-700 px-5  py-1 rounded-2xl flex items-center hover:underline hover:text-blue-500  text-[12px]"
+              className=" text-gray-700 px-5  py-1 rounded-2xl flex items-center hover:underline hover:text-blue-500 lg:text-[16px]  text-[12px]"
             >
               <FaGithub className="text-md me-1"></FaGithub>Server-Code
             </a>

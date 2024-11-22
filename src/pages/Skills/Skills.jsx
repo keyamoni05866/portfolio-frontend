@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import BlogCard from "../../Component/BlogsCard/BlogCard";
+import React, { useEffect, useState } from "react";
+import SkillCard from "../../Component/SkillCard/SkillCard";
 
-const Blogs = () => {
-  const [blogData, setBlogsData] = useState(null);
+const Skills = () => {
+  const [skills, setSkills] = useState(null);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -10,13 +10,13 @@ const Blogs = () => {
     const fetchBlogs = async () => {
       try {
         const res = await fetch(
-          "https://portfolio-server-rosy-pi.vercel.app/api/blogs"
+          "https://portfolio-server-rosy-pi.vercel.app/api/skills"
         );
         if (!res.ok) {
           throw new Error("Fetch failed");
         }
         const result = await res.json();
-        setBlogsData(result);
+        setSkills(result);
       } catch (error) {
         setError(error?.message);
       } finally {
@@ -26,6 +26,8 @@ const Blogs = () => {
     fetchBlogs();
   }, []);
 
+  console.log(skills);
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-full">
@@ -33,21 +35,20 @@ const Blogs = () => {
       </div>
     );
   }
-
   return (
-    <section id="blog" className="   lg:mx-20  mt-20">
+    <section id="project" className=" section  lg:mx-20  mt-20">
       <p className="text-center text-lg lg:text-xl font-bold text-[#b6b4b4] uppercase">
-        Blogs
+        Skill
       </p>
       <h2 className="lg:text-5xl text-3xl font-semibold text-[#0b192c]  text-center mb-3 lg:mb-20   ">
-        My Thoughts On Technology
+        My Technical Skills
       </h2>
 
-      <div className="lg:mt-3  mt-10 mx-auto   gap-4">
-        {blogData?.data && blogData?.data?.length > 0 ? (
-          blogData?.data
-            ?.slice(0, 3)
-            .map((blog) => <BlogCard key={blog._id} blog={blog} />)
+      <div className="lg:mt-3  mt-10 mx-auto lg:mx-20   gap-4 grid lg:grid-cols-5 grid-cols-2">
+        {skills?.data && skills?.data?.length > 0 ? (
+          skills?.data.map((skill) => (
+            <SkillCard key={skill?._id} skill={skill} />
+          ))
         ) : (
           <h2 className="text-center">No Blog Found!!! </h2>
         )}
@@ -56,4 +57,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default Skills;
