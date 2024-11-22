@@ -17,8 +17,6 @@ const Contact = () => {
       message,
     };
 
-    // console.log(contactInfo);
-
     if (!name || !email || !subject || !message) {
       swal({
         title: "Please fill All Information",
