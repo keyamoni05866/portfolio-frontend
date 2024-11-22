@@ -1,9 +1,9 @@
+import Contact from "./pages/Contact/Contact";
+
 function App() {
   return (
     <div className="min-h-screen max-w-7xl mx-auto">
-      <h4 className="text-purple-400">
-        this is home page <button className="btn">Button</button>
-      </h4>
+      <Contact />
     </div>
   );
 }

@@ -1,0 +1,77 @@
+.contact__title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.contact__description {
+  font-size: 18px;
+  text-align: justify;
+  line-height: 1.6;
+}
+.contact__description,
+.contact__info .info__item {
+  margin-bottom: 20px;
+}
+.contact__info .info__item {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.contact__info .info__icon {
+  color: #0b192c;
+  font-size: 40px;
+}
+
+.contact__form {
+  border-radius: 30px;
+  padding: 30px 20px;
+}
+.form__input-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 10px;
+}
+
+.form__input-div {
+  margin-bottom: 20px;
+}
+.form__control {
+  border: 1px solid #0b192c !important;
+
+  width: 100%;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 18px;
+}
+.textarea {
+  resize: none;
+  height: 170px;
+  border: 1px solid #0b192c !important;
+
+  width: 100%;
+  border-radius: 30px;
+  font-size: 18px !important;
+  margin-bottom: 0px;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 35px;
+  border: 1px solid #0b192c;
+  border-radius: 30px;
+  font-size: 19px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background-color: #0b192c;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .form__input-group {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

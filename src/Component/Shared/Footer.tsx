@@ -9,7 +9,6 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://www.facebook.com/profile.php?id=100036332574044"
-              className="contact__social-link"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +32,6 @@ const Footer = () => {
             <a
               target="_blank"
               href="https://www.linkedin.com/in/keya-moni-43a437221/"
-              className="contact__social-link"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,11 +52,7 @@ const Footer = () => {
                 ></path>
               </svg>{" "}
             </a>
-            <a
-              target="_blank"
-              href="https://github.com/keyamoni05866"
-              className="contact__social-link"
-            >
+            <a target="_blank" href="https://github.com/keyamoni05866">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 x="0px"
