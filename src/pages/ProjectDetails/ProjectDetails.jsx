@@ -14,7 +14,7 @@ const ProjectDetails = () => {
     clientRepo,
     serverRepo,
   } = singleProject?.data;
-  console.log(singleProject?.data);
+  // console.log(singleProject?.data);
   return (
     <div className="min-h-screen mx-auto max-w-6xl mt-20">
       <div className="lg:flex justify-between gap-20 mx-4 lg:mx-0">

@@ -3,7 +3,13 @@ import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import bannerImg from "../../assets/bannerImg.jpg";
 const Banner = () => {
   return (
-    <section id="home" className="  mx-4  lg:mx-20  mt-20 rounded-md ">
+    <section
+      data-aos="fade-down"
+      data-aos-easing="linear"
+      data-aos-duration="3000"
+      id="home"
+      className="  mx-4  lg:mx-20  mt-20 rounded-md "
+    >
       <div className="lg:flex gap-20 w-full">
         <div className=" w-full lg:w-[60%] ">
           <h2 className="text-2xl lg:text-5xl  ">Hi, I'm Keya Moni</h2>

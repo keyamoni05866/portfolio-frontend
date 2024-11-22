@@ -11,7 +11,7 @@ const BlogDetails = () => {
     image,
   } = singleBlog?.data;
   return (
-    <div className="min-h-screen lg:mx-auto max-w-6xl mt-5 mx-5">
+    <div className="min-h-screen lg:mx-auto max-w-6xl mt-5 mx-5 mb-10">
       <h4 className="lg:text-4xl text-xl font-bold ">{title}</h4>
       <div className="w-full my-8">
         <img src={image} alt="" className="w-full h-[400px] rounded-xl" />

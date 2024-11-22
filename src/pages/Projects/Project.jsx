@@ -36,7 +36,7 @@ const Project = () => {
     );
   }
   return (
-    <section id="project" className=" section  lg:mx-20  mt-20">
+    <section id="project" className="   lg:mx-20  mt-20">
       <p className="text-center text-lg lg:text-xl font-bold text-[#b6b4b4] uppercase">
         Project
       </p>

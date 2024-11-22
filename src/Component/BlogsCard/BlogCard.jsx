@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const BlogCard = ({ blog }) => {
   const { _id, title, image, description } = blog;
   return (
-    <div className="my-10">
+    <div data-aos="fade-up" data-aos-easing="linear" className="my-10">
       <div className=" divider"></div>
       <div className="lg:flex justify-between gap-6  w-full ">
         <div className="lg:w-[25%] w-[320px] mx-auto mb-5 lg:mb-0">

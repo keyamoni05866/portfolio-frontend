@@ -36,7 +36,7 @@ const Skills = () => {
     );
   }
   return (
-    <section id="project" className=" section  lg:mx-20  mt-20">
+    <section id="skill" className=" section  lg:mx-20  mt-20">
       <p className="text-center text-lg lg:text-xl font-bold text-[#b6b4b4] uppercase">
         Skill
       </p>

@@ -21,7 +21,12 @@ const ProjectCard = ({ project }) => {
   //   console.log(image);
   return (
     <div>
-      <div className="lg:flex lg:flex-row-reverse lg:justify-between mb-10 gap-6 shadow-[#b9bec4] rounded-lg my-5 border px-7 py-9 shadow-sm ">
+      <div
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="2000"
+        className="lg:flex lg:flex-row-reverse lg:justify-between mb-10 gap-6 shadow-[#b9bec4] rounded-lg my-5 border px-7 py-9 shadow-sm "
+      >
         <div className="lg:w-[50%] shadow-md rounded-2xl">
           <div
             key={project.id}
